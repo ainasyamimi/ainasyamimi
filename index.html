@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ainasyamimi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <!--Preloader-->
+    <div class="preloader opacity-0">
+        <div class="loader"></div>
+    </div>
+    <!--Preloader End-->
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="burger">
+                <i class="fa fa-bars menu-btn"></i>
+            </div>
+            <ul class="navbar-item close">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Home Section-->
+    <section class="section home" id="home">
+        <div class="container">
+            <div class="home-inner">
+                <div class="profile-pic">
+                    <img src="aina.jpg" alt="Profile Picture" class="shadow-dark">
+                </div>
+
+                <div class="intro">
+                    <h3> Hi! I'm Aina Syamimi! </h3>
+                    <div class="social-media">
+                        <a href="https://linkedin.com/in/ainasyamimi" target="_blank" class="social"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    <br>
+
+                    <a href="CV Aina Syamimi Yusoff.pdf" class="cv"> Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home Section End-->
+
+    <!--Contact Section-->
+    <section class="section" id="contact">
+        <div class="container">
+            <h3 class="subtitle">Contact</h3>
+        <iframe name="hideen_iframe" id="hidden_iframe" style="display: none;"onload="if(submitted) {resetForm()}"></iframe>
+        <form class="contact-form shadow-dark" id="contact-form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeSJhP0RV9pJKUr1VfFretOS3LhmXo--el_78YmuBdi7TXhPA/formResponse" method="post" target="hideen_iframe" role="form" onsubmit="return validadeForm();">
+            <div class="input-fields">
+                <input type="text" required class="input" id="name" name="entry.1982197848" placeholder="Name">
+                <input type="text" required class="input" id="email" name="entry.157789208" placeholder="Email">
+                <input type="text" required class="input" id="subject" name="entry.2147100205" placeholder="Subject">
+            </div>
+
+            <div class="msg">
+                <textarea required placeholder="Message" id="message" name="entry.1470721915"></textarea>
+                <button type="submit" name="submit" class="btn">Send</button>
+                <div id="success" style="color: red"><br></div>
+            </div>
+        </form>
+        </div>
+    </section>
+    <!--Contact Section-->
+
+    <!--Copyright Section-->
+    <div class="copyright">
+        &copy; Aina Syamimi 2020
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
